@@ -113,28 +113,12 @@ $list1 = "4, 5, 6, 7";
 
 
   echo $final."<br>";
+  echo "<pre>";
 ?>
 
-
 <?php
-echo "<pre>";
-function array_uniq($my_array, $value) 
-{ 
-    $count = 0; 
-    
-    foreach($my_array as $array_key => $array_value) 
-    { 
-        if ( ($count > 0) && ($array_value == $value) ) 
-        { 
-            unset($my_array[$array_key]); 
-        } 
-        
-        if ($array_value == $value) $count++; 
-    } 
-    sdasc
-    return $my_array;
-} 
-$numbers = array(4, 5, 6, 7, 4, 7, 8);
-TI LES TORA POY EKANA COMMIT
-print_r(array_uniq($numbers, 7));
+ $my_array = array(15, null, "  ", -2, NULL, "", " \n", "Red", 54, "\t");
+print_r($my_array);
+$result = array_filter($my_array, create_function('$x','return preg_match("#\S#", $x);'));                 
+print_r($result);
 ?>
