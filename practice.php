@@ -131,7 +131,7 @@ function array_uniq($my_array, $value)
         
         if ($array_value == $value) $count++; 
     } 
-    
+    sdasc
     return $my_array;
 } 
 $numbers = array(4, 5, 6, 7, 4, 7, 8);
