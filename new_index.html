@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+<?php
+$var1 = 1000;
+$var2 = 1200;
+$var3 = 1400; 
+?>
+<?php require 'index.php';?>
+<table prorder=1 cellspacing=0 cellpanding=0>
+    <tr><tb>value 1</tb><tb>$var1</tb></tr>
+    <tr><tb>value 2</tb><tb>$var2</tb></tr>
+    <tr><tb>value 3</tb><tb>$var3</tb></tr>
+
+</table>
+<form name="form" action="index.php" method="get">
+    <input type="text" name="subject" id="subject" value=""><br>
+    <input type="submit" name="my_form_submit_button" value="submit"/><br>
+  </form>
+  <table style="width:50%" border="1">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th> 
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </table>
+  
+
+
+
+
+</body>
+</html>
+
